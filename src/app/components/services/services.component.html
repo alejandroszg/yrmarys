@@ -1,11 +1,10 @@
-<section class="bg-[#F0ECE9] w-full h-screen max-h-screen flex flex-col">
-  <div class="max-w-[1140px] mx-auto px-9">
+<section class="bg-[#F0ECE9] w-full h-auto xl:h-screen flex flex-col">
+  <div class="max-w-[1140px] mx-auto px-6 flex flex-col items-center">
     <div class="text-center">
       <h2 class="text-3xl font-bold mt-8 mb-6">Services</h2>
     </div>
 
-    <div class="flex justify-between items-center gap-x-3 gap-y-10 flex-wrap">
-      <p>
+      <p class="mb-6">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolore
         porro amet quaerat vel sequi. Modi aut eos obcaecati odit. Non ad
         ratione rem numquam totam dolorum veniam ullam voluptate ex possimus
@@ -18,30 +17,32 @@
         facilis adipisci nesciunt quo? Quae, perferendis accusamus perspiciatis
         similique totam eius placeat sed natus suscipit hic.
       </p>
-      <app-single-service
-        [bgImageService]="'bg-service-1'"
-      ></app-single-service>
-      <app-single-service
-        [bgImageService]="'bg-service-2'"
-      ></app-single-service>
-      <app-single-service
-        [bgImageService]="'bg-service-3'"
-      ></app-single-service>
-      <app-single-service
-        [bgImageService]="'bg-service-4'"
-      ></app-single-service>
-      <app-single-service
-        [bgImageService]="'bg-service-4'"
-      ></app-single-service>
-      <app-single-service
-        [bgImageService]="'bg-service-3'"
-      ></app-single-service>
-      <app-single-service
-        [bgImageService]="'bg-service-2'"
-      ></app-single-service>
-      <app-single-service
-        [bgImageService]="'bg-service-1'"
-      ></app-single-service>
-    </div>
+
+      <div class="flex flex-row flex-wrap items-center justify-center lg:justify-between gap-y-8 gap-x-10 pb-9 xl:pb-0">
+        <app-single-service
+          [bgImageService]="'bg-service-1'"
+        ></app-single-service>
+        <app-single-service
+          [bgImageService]="'bg-service-2'"
+        ></app-single-service>
+        <app-single-service
+          [bgImageService]="'bg-service-3'"
+        ></app-single-service>
+        <app-single-service
+          [bgImageService]="'bg-service-4'"
+        ></app-single-service>
+        <app-single-service
+          [bgImageService]="'bg-service-4'"
+        ></app-single-service>
+        <app-single-service
+          [bgImageService]="'bg-service-3'"
+        ></app-single-service>
+        <app-single-service
+          [bgImageService]="'bg-service-2'"
+        ></app-single-service>
+        <app-single-service
+          [bgImageService]="'bg-service-1'"
+        ></app-single-service>
+      </div>
   </div>
 </section>

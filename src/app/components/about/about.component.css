@@ -1,3 +1,11 @@
 :host ::ng-deep p-carousel .p-carousel .p-carousel-content .p-carousel-container .p-carousel-items-content .p-carousel-items-container {
     align-items: center;
 }
+
+::ng-deep .p-carousel-prev, 
+::ng-deep .p-carousel-next {
+    color: #AC8D78; /* Cambia este color al que desees */
+    font-size: 2rem; /* Ajusta el tamaño si es necesario */
+    font-weight: bold;
+}
+

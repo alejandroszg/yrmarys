@@ -40,7 +40,7 @@ ngOnInit(): void {
     this.responsiveOptions = [
       {
           breakpoint: '1199px',
-          numVisible: 1,
+          numVisible: 2,
           numScroll: 1
       },
       {
