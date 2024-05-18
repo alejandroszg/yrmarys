@@ -1,0 +1,47 @@
+<section class="bg-[#DCD1BB] w-full h-screen max-h-screen">
+  <div class="max-w-[1140px] mx-auto px-9">
+    <h2 class="text-3xl font-bold pt-8 mb-6">About Me</h2>
+
+    <div class="bg-[#F0ECE9] py-6 px-6 rounded-md flex flex-col items-end">
+        <p>
+          Hello! Me especializo en mejorar la identidad visual y el valor único de
+          las marcas en el mercado. Con seis años de experiencia en Marketing
+          Digital, he desempeñado varios roles, incluyendo Social Media Manager y
+          Content Creator.
+          <br>
+          <br>
+          Mi enfoque es proyectar tu idea y plasmarlo en una
+          forma única en las redes Sociales ¿Listo empezar? Let 's have a talk!
+          <br>
+        </p>
+        <a href="https://wa.me/56992968295" target="_blank">
+            <button 
+                class="bg-white rounded-lg px-3 py-2 hover:scale-105 ease-in-out duration-200 hover:font-semibold"
+            >Let's talk</button>
+        </a>
+      </div>
+
+    <h2 class="text-3xl font-bold pt-8 mb-6">Brands</h2>
+
+    <div>
+        <p-carousel
+            [value]="brand"
+            [numVisible]="2"
+            [numScroll]="1"
+            [circular]="true"
+            [responsiveOptions]="responsiveOptions"
+            autoplayInterval="3000"
+        >
+        <ng-template let-brand pTemplate="item">
+            <img
+                src="../../../assets/{{ brand.img }}"
+                [alt]="brand.name"
+                class="w-56 flex items-center"
+            />
+        </ng-template>
+        
+        </p-carousel>
+    </div>
+
+  </div>
+</section>
